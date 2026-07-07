@@ -4,13 +4,13 @@
     box-sizing: content-box;
 }
 
-html{
+html {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navBg {
-    background-color: #f86925;
+    background-color: #f4621b;
     color: #fff;
 }
 
@@ -18,7 +18,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 5px 30px 0px 30px;
 }
 
 .logo {
@@ -52,28 +52,66 @@ html{
     margin: 0 auto;
 }
 
-.p-5{
+.p-5 {
     padding: 5%;
 }
 
-.py-5{
+.py-5 {
     padding: 5% 0%;
 }
 
-.px-5{
+.px-5 {
     padding: 0% 5%;
 }
 
-.heroContentDiv{
+.heroContentDiv {
     flex: 365px 0 0;
 }
 
-.mainHead{
+.mainHead {
     font-size: 2.8rem;
     margin-bottom: 5%;
 }
 
-.orangecolor{color: #f86925;}
+.orangecolor {
+    color: #f86925;
+}
+
+.di-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+}
+
+.featureheader {
+    margin: 0% auto;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.txtcontentSub{
+    margin-top: 2.5%;
+}
+
+.di-grid img{width: 70px;}
+
+.di-grid > div{
+    border:0.5px solid #eee;
+    border-radius: 8px;
+    box-shadow: 5px 1px 0px 0px #edeef2;
+    padding: 6% 15%;
+    background-color: #fff;
+}
+
+.featureBg{
+    background-color: #edeef2;
+}
+
+.di-grid h3{
+    margin: 6% 0;
+}
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -128,18 +166,32 @@ html{
         transform: rotate(-45deg) translate(5px, -6px);
     }
 
-    .d-flexcolumnMob{
-        display:flex;
+    .d-flexcolumnMob {
+        display: flex;
         flex-direction: column;
-        gap:25px;
+        gap: 25px;
     }
 }
 
-@media screen and (min-width: 769px){
-    .d-flexrow{
+@media screen and (min-width: 769px) {
+    .mainHead2 {
+        font-size: 3rem;
+    }
+
+    .d-flexrow {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .di-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .di-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
