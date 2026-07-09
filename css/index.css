@@ -106,9 +106,6 @@ html {
     background-color: #edeef2;
 }
 
-.di-grid h3{
-    margin: 6% 0;
-}
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -149,6 +146,7 @@ html {
     .menu-toggle:checked~.nav-links {
         transform: translateY(0);
         opacity: 1;
+        z-index: 1;
     }
 
     .menu-toggle:checked~.hamburger .bar:nth-child(1) {
