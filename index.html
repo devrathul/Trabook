@@ -23,10 +23,8 @@
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Tour</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -210,6 +208,37 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <div class="bg-gray-100 py-[5%]">
+                <div class="max-w-md m-auto">
+                    <div>
+                        <h1 class="text-center pb-[12%]  text-[3rem]">Contact Us</h1>
+                    </div>
+                    <form class="bg-white px-[5%] py-[10%] rounded-[10px] shadow-2xl">
+                        <div class="flex items-center justify-between mb-[20px]">
+                            <label class="w-20" for="txtName">Name</label>
+                            <input class="border rounded w-80" type="text" id="txtName" required />
+                        </div>
+                        <div class="flex items-center justify-between mb-[20px]">
+                            <label class="w-20" for="txtEmail">Email</label>
+                            <input class="border rounded w-80" type="email" id="txtEmail" required />
+                        </div>
+                        <div class="flex items-center justify-between mb-[20px]">
+                            <label class="w-20" for="txtPhone">Phone</label>
+                            <input class="border rounded w-80" type="phone" id="txtPhone" required />
+                        </div>
+                        <div class="flex items-center justify-between mb-[20px]">
+                            <label class="w-20" for="txtMsg">Comments</label>
+                            <textarea class="border rounded w-80" name="txtMsg" id="txtMsg"></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button type="button" class="rounded-[10px] justify-center bg-orange-500 px-3 py-2 text-sm font-semibold text-white">Contact Us</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
